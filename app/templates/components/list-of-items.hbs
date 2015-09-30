@@ -1,1 +1,7 @@
-{{yield}}
+{{input value=newItem}}
+<button {{action "addNewItem"}}>Add New Item</button>
+<ul>
+  {{#each items as |item|}}
+      <li>{{item}}</li>
+  {{/each}}
+</ul>
