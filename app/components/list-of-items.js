@@ -13,6 +13,10 @@ export default Ember.Component.extend({
 		this.get('items').pushObject(newItem);  
 	  }
     },
+	deleteItem: function(item)
+	{
+		console.log(item);
+	},
     saveItems: function () {
       this.sendAction('action', this.get('items')); // слово "action" - просто метка на метод. Есть здесь и в файле с вызовом компонента
     }
