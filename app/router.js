@@ -7,7 +7,7 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('delivery');
-  this.route('farm');
+  this.route('farm', {path: 'littlefarm'});
 });
 
 export default Router;
