@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  items: ['item1', 'item2', 'item3'],
+  items: [], // значение по умолчанию
   actions:
   {
     addNewItem: function()
